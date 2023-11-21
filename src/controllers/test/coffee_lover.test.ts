@@ -1,7 +1,10 @@
 import { app } from "../app";
+import request  from "supertest";
 
 describe("Coffee Lover endpoint", () => {
-    it("Should return get", ()=> {
-        expect(app.get("/coffee_lover").toEqual("Coffee Lover"))
+    test("Should return get", async () => {
+        const result = await request(app).get('/coffee_lover');
+        expect(result.statusCode).toEqual(200);
+        expect(result.text).toEqual("I like coffee!")
     });
-})
+});

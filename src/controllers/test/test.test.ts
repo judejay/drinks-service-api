@@ -1,4 +1,4 @@
-import { hello } from "../src/controllers/test";
+import { hello } from "../initial";
 
 describe('Can run a test after importing a typescript file', () => { 
     it("Should display Message",() =>{

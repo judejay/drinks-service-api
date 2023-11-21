@@ -1,5 +1,5 @@
 {
-    "include": ["./src/**/*"],
+    "include": ["./src/**/*", "test/home_request.test.ts"],
     "exclude": ["node_modules"],
     "compilerOptions": {
     "strict": true /* Enable all strict type-checking

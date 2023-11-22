@@ -8,3 +8,7 @@ const coffee = coffeeService.getCoffee(coffeeName as
 string);
 res.json(coffee).status(200);
 };
+
+export const getCoffeeLover = async (req: Request, res: Response) =>{
+    res.json("I like coffee!").status(200)
+}

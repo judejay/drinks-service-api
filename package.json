@@ -2,10 +2,10 @@
   "name": "drinks-service-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.js",  
   "scripts": {
     "test": "jest",
-    "type": "module"
+    "start" : "nodemon src/server.ts"
   },
   "keywords": [],
   "author": "",

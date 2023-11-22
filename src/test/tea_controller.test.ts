@@ -21,3 +21,13 @@ test('GET /tea should return correct object with different drink', async () => {
     name: 'Darjeeling',
     });
     });
+
+    test('GET /tea should return correct object with no query', async () => {
+        const res = await request(app)
+        .get('/tea')    
+        expect(res.statusCode).toEqual(200);
+        expect(res.body).toEqual({
+        drinkType: 'Tea',
+        name: 'Ceylon',
+        });
+        });
